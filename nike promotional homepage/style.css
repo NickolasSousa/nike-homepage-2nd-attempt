@@ -36,7 +36,8 @@ header{
 .header__container ul{
     display: flex;
     justify-content: space-between;
-    gap: 32px;
+    gap: 32px; 
+    align-items: center;
 }
 
 .header__container__button{
@@ -54,7 +55,7 @@ header{
 .advertisment-container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100vw;
     padding: 35px 0;
 }
@@ -76,7 +77,7 @@ header{
 .advertisment-container img{
     object-fit: contain;
     width: 100vw;
-    height: 524.51px;
+    height: 50vh;
     text-align: center;
 }
 
