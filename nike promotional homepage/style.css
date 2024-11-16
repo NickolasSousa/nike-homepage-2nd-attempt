@@ -1,0 +1,138 @@
+:root{
+    --montserrat: "Montserrat", sans-serif;
+    --hebrew: "Open Sans Hebrew", sans-serif;
+    --verde-fundo: #AAEDE4;
+    --verde-escuro: #149583;
+    --branco: #fff;
+    --branco-elipse: #F5F4F4;
+    --preto: #000;
+    --cinza-claro: #808080;
+    --cinza-escuro: #484848;
+}
+
+body{
+    background-color: var(--verde-fundo);
+}
+
+/* HEADER */
+
+header{
+    font-family: var(--montserrat);
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--preto);
+}
+
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 54px;
+}
+
+.header__container img{
+    object-fit: contain;
+}
+
+.header__container ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.header__container__button{
+    background-color: transparent;
+    border: none;
+    font-family: var(--montserrat);
+    font-weight: 500;
+    font-size: 16px;
+    width: 46px;
+    height: 20px;
+}
+
+/* MAIN (photo+text)*/
+
+.advertisment-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    padding: 35px 0;
+}
+
+.advertisment-container h1{
+    font-family: var(--hebrew);
+    font-size: 128px;
+    font-weight: 400;
+    color: var(--branco);
+    text-align: center;
+}
+
+.advertisment-container strong{
+    color: transparent;
+    -webkit-text-stroke-color: var(--branco);
+    -webkit-text-stroke-width: 3px;
+}
+
+.advertisment-container img{
+    object-fit: contain;
+    width: 100vw;
+    height: 524.51px;
+    text-align: center;
+}
+
+/* MAIN (price) */
+
+.price__container{
+    display: flex;
+    flex-direction: column;
+    /* background: url('./assets/Ellipse 1.png');
+    background-repeat: no-repeat;
+    background-size: contain; */
+    background: var(--branco);
+    border-radius: 100% 100% 0 0;
+    height: 17vh;
+}
+
+.price-image__container{
+    display: flex;
+    justify-content: center;
+}
+
+.price-image__background{
+    display: flex;
+    justify-content: center;
+    height: 72px;
+    width: 84px;
+    background-color: var(--verde-escuro);
+    border-radius: 93px;
+    position: relative;
+    bottom: 32px;
+}
+
+.price__container img{
+    object-fit: contain;
+    height: 22px;
+    width: 61px;
+    margin-top: 24px;
+}
+
+
+.price__container ul li{
+    text-align: center;
+    margin-top: 15px;
+    font-family: var(--hebrew);
+}
+
+.price__container .old__price{
+    text-decoration: line-through;
+    margin-top: -20px;
+    font-size: 32px;
+    font-weight: 400;
+    color: var(--cinza-claro);
+}
+
+.price__container .current__price{
+    color: var(--cinza-escuro);
+    font-size: 48px;
+    font-weight: 400;
+}
