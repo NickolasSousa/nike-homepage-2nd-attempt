@@ -101,6 +101,7 @@ header{
 .price-image__background{
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 72px;
     width: 84px;
     background-color: var(--verde-escuro);
@@ -113,7 +114,6 @@ header{
     object-fit: contain;
     height: 22px;
     width: 61px;
-    margin-top: 24px;
 }
 
 
